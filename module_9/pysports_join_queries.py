@@ -36,7 +36,7 @@ try:
     for player in players:
         print("  Player ID: {}\n  First Name: {}\n  Last Name: {}\n  Team Name: {}\n".format(player[0], player[1], player[2], player[3]))
 
-    input("\n\n  Press any key to continue... ")
+    input("\n\n  Press a key to continue... ")
 
 except mysql.connector.Error as err:
 # Manage errors
