@@ -1,8 +1,8 @@
 """
-    Title: mysql_test.py
+    Title: pysports_queries.py
     Author: Rebecca Robinson
     Date: 02.03.23
-    Description: Test Program for Joining Player and Team Tables
+    Description: Performing a query.
 """
 
 # importing
