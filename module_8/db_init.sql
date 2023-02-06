@@ -10,8 +10,7 @@ DROP USER IF EXISTS 'pysports_user'@'localhost';
 
 
 -- create user
--- Following example, why use MySQL8IsGreat! ? Is this something we should personalize?
-CREATE USER 'pysports_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQL8IsGreat!';
+CREATE USER 'pysports_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'M662Lhmi2U!-BK&B';
 
 -- apply priveleges to user for database
 GRANT ALL PRIVILEGES ON pysports.* TO'pysports_user'@'localhost';
@@ -62,10 +61,11 @@ INSERT INTO player(first_name, last_name, team_id)
     VALUES('Deanna', 'Troi', (SELECT team_id FROM team WHERE team_name = 'Team Enterprise'));
 
 INSERT INTO player(first_name, last_name, team_id) 
-    VALUES('Chancellor', 'Gowron', (SELECT team_id FROM team WHERE team_name = 'Team Klingon Honor Guard'));
+    VALUES('Chancellor', 'Gowron', (SELECT team_id FROM team WHERE team_name = 'Team Bortas'));
 
 INSERT INTO player(first_name, last_name, team_id)
-    VALUES('General', 'Chang', (SELECT team_id FROM team WHERE team_name = 'Team Klingon Honor Guard'));
+    VALUES('General', 'Chang', (SELECT team_id FROM team WHERE team_name = 'Team Bortas'));
 
 INSERT INTO player(first_name, last_name, team_id)
-    VALUES('Commander', 'Kruge', (SELECT team_id FROM team WHERE team_name = 'Team Klingon Honor Guard'));
+    VALUES('Commander', 'Kruge', (SELECT team_id FROM team WHERE team_name = 'Team Bortas'));
+
