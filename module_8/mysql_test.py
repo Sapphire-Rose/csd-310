@@ -41,6 +41,6 @@ except mysql.connector.Error as err:
         print(err)
 
 finally:
-    """ close the connection to MySQL """
+    # close MySQL
 
     db.close()
