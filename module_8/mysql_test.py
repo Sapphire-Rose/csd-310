@@ -9,7 +9,7 @@
 import mysql.connector
 from mysql.connector import errorcode
 
-""" database config object """
+# database configuration
 config = {
     "user": "pysports_user",
     "password": "M662Lhmi2U!-BK&B",
