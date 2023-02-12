@@ -58,7 +58,7 @@ try:
     show_players(cursor, "*Displaying Players After Update*")
 
 # Update the inserted record 
-    update_player = ("UPDATE player SET team_id = 2, first_name = 'Voq', last_name = 'Torchbearer' WHERE first_name = 'Ash Tyler'")
+    update_player = ("UPDATE player SET team_id = 2, first_name = 'Voq', last_name = 'Torchbearer' WHERE first_name = 'Ash'")
 
 # Execute the update 
     cursor.execute(update_player)
