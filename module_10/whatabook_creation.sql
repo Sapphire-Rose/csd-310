@@ -1,7 +1,7 @@
 /*
     Title: whatabook.creation.sql
     Author: Rebecca Robinson
-    Date: 02.19.2023
+    Date: 02.17.2023
     Description: Creating the WhatABook user and tables.
 */
 
@@ -13,10 +13,6 @@ CREATE USER 'whatabook_user'@'localhost' IDENTIFIED WITH mysql_native_password B
 
 -- Apply privileges to user for database
 GRANT ALL PRIVILEGES ON whatabook.* TO'whatabook_user'@'localhost';
-
--- Drop for duplicate protection
-ALTER TABLE wishlist DROP FOREIGN KEY fk_book;
-ALTER TABLE wishlist DROP FOREIGN KEY fk_user;
 
 -- Drop for duplicate protection
 DROP TABLE IF EXISTS store;
