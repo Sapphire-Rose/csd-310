@@ -62,10 +62,10 @@ def show_locations(_cursor):
 def validate_user():
 
     try:
-        user_id = int(input('\n    Please enter your Customer ID:  '))
+        user_id = int(input('\n    Please enter your Customer ID (This should be a number between 1 and 3):  '))
 
         if user_id < 0 or user_id > 3:
-            print("\n  Invalid selection. Your Customer ID is either 1, 2, or 3. Program\n")
+            print("\n  Invalid selection. Your Customer ID is either 1, 2, or 3. Closing Program.\n")
             sys.exit(0)
 
         return user_id
