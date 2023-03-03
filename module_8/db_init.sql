@@ -10,7 +10,7 @@ DROP USER IF EXISTS 'pysports_user'@'localhost';
 
 
 -- create user
-CREATE USER 'pysports_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'M662Lhmi2U!-BK&B';
+CREATE USER 'pysports_user'@'localhost' IDENTIFIED WITH mysql_native_password BY '';  #insert root password
 
 -- apply priveleges to user for database
 GRANT ALL PRIVILEGES ON pysports.* TO'pysports_user'@'localhost';
