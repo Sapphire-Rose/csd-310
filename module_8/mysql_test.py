@@ -12,7 +12,7 @@ from mysql.connector import errorcode
 # database configuration
 config = {
     "user": "pysports_user",
-    "password": "M662Lhmi2U!-BK&B",
+    "password": "", #add root password
     "host": "127.0.0.1",
     "database": "pysports",
     "raise_on_warnings": True
